@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nitro Latte: Purebread Mount Pleasant</title>
+<style>
+:root{--bg:#faf7f2;--panel:#fff;--fg:#2b2622;--muted:#7a7067;--line:#e8e1d8;--accent:#8a5a2b;--accent-soft:#e9dccd;--muted-bar:#cfc5b9;--ok:#2f7d4a;--bad:#b3412e;--serif:Georgia,'Times New Roman',serif;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1a18;--panel:#262320;--fg:#f1ece6;--muted:#a59b90;--line:#3a3531;--accent:#d39a5e;--accent-soft:#4a3a2b;--muted-bar:#5a524b;--ok:#6cc28a;--bad:#e57a66}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans)}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px;display:flex;flex-direction:column;gap:28px}
+h1{font-family:var(--serif);font-weight:400;font-size:2rem;margin:0;line-height:1.2}
+h2{font-size:1.1rem;font-weight:600;margin:0 0 4px}
+.sub,.note,.delta,.label{font-size:.85rem;color:var(--muted)}
+.sub{margin:6px 0 0}.note{margin:4px 0 0}
+.take{margin:14px 0 0;line-height:1.55;max-width:62ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;min-width:0}
+.big{display:block;font-family:var(--serif);font-size:2.1rem;line-height:1.1;margin:6px 0;font-variant-numeric:tabular-nums}
+.up{color:var(--ok)}.down{color:var(--bad)}.mt{margin-top:12px}
+.bar{height:14px;border-radius:7px;background:var(--accent-soft);overflow:hidden;margin:6px 0 8px}
+.bar>div{height:100%;background:var(--accent);border-radius:7px}
+.row{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.right{text-align:right}
+details{font-size:.85rem;color:var(--muted)}details summary{cursor:pointer}
+details ul{margin:8px 0 0;padding-left:18px;line-height:1.55}
+svg{display:block;width:100%;height:auto;margin-top:10px}
+svg text{font-family:var(--sans);font-size:11px;fill:var(--muted)}
+svg .val{fill:var(--fg)}svg .name{font-size:12px}svg .name.hi{fill:var(--fg);font-weight:600}
+.legend{display:flex;gap:14px;font-size:.8rem;color:var(--muted);margin-top:6px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--accent)}
+.sw.line{height:3px;vertical-align:2px;background:var(--muted-bar)}
+.error{border:1px solid var(--bad);color:var(--bad);border-radius:12px;padding:14px 18px}
+</style>
+</head>
+<body>
+<main class="wrap" id="app"><p class="note">Loading…</p></main>
+<script>
+const int = v => v == null ? '—' : Math.round(v).toLocaleString('en-CA');
+const money = v => v == null ? '—' : '$' + Number(v).toLocaleString('en-CA', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const pct = v => v == null ? '—' : v.toFixed(1) + '%';
+const day = (k, long) => k ? new Date(k + 'T00:00:00Z').toLocaleDateString('en-CA', {timeZone: 'UTC', weekday: long ? 'short' : undefined, month: 'short', day: 'numeric'}) : '—';
+const hr = h => (h % 12 === 0 ? 12 : h % 12) + (h < 12 ? 'am' : 'pm');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const card = (label, big, sub) => `<div class="card"><div class="label">${esc(label)}</div><span class="big">${big}</span><div class="delta">${sub}</div></div>`;
+
+const EQUIPMENT = [
+  ['Keg system installation quote (KegMaster fridge, tap/tower, regulator, fittings, shipping, installation)', 3422.16],
+  ['5-gallon Corny keg', 202.5],
+  ['SpinStick 9" beverage mixer', 884.25],
+  ['Mixer order shipping', 96.3]
+];
+
+function bars(rows, aria, hideZero) {
+  const W = 600, H = 250, m = {t: 18, r: 6, b: 26, l: 34};
+  const max = Math.max(1, ...rows.map(r => Math.max(r.value, r.ref || 0)));
+  const raw = max / 4, p = Math.pow(10, Math.floor(Math.log10(raw))), q = raw / p;
+  const step = (q <= 1 ? 1 : q <= 2 ? 2 : q <= 5 ? 5 : 10) * p;
+  const top = Math.ceil(max * 1.1 / step) * step;
+  const y = v => H - m.b - v / top * (H - m.t - m.b);
+  const band = (W - m.l - m.r) / rows.length, bw = band * .7;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}">`;
+  for (let v = 0; v <= top; v += step) s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  rows.forEach((r, i) => {
+    const x = m.l + i * band + (band - bw) / 2;
+    s += `<g><title>${esc(r.tip)}</title><rect x="${x}" y="${y(r.value)}" width="${bw}" height="${y(0) - y(r.value)}" rx="2" fill="var(--accent)" opacity="${r.faded ? .5 : 1}"/>`;
+    if (r.ref != null) s += `<line x1="${x - 2}" x2="${x + bw + 2}" y1="${y(r.ref)}" y2="${y(r.ref)}" stroke="var(--muted-bar)" stroke-width="3" stroke-linecap="round"/>`;
+    if (!hideZero || r.value > 0) s += `<text class="val" x="${x + bw / 2}" y="${Math.min(y(r.value), r.ref != null ? y(r.ref) : y(r.value)) - 5}" text-anchor="middle">${r.value}</text>`;
+    s += `<text x="${x + bw / 2}" y="${H - 8}" text-anchor="middle">${esc(r.label)}</text></g>`;
+  });
+  return s + '</svg>';
+}
+
+function ranking(rows) {
+  const W = 600, rowH = 44, max = Math.max(1, ...rows.map(r => r.launch_units));
+  let s = `<svg viewBox="0 0 ${W} ${rows.length * rowH}" role="img" aria-label="Featured drinks sold since Nov 14">`;
+  rows.forEach((r, i) => {
+    const w = Math.max(2, r.launch_units / max * (W - 150)), hi = r.key === 'nitro';
+    s += `<g transform="translate(0,${i * rowH})"><text class="name${hi ? ' hi' : ''}" x="0" y="13">${esc(r.label)}</text><rect x="0" y="19" width="${w}" height="14" rx="2" fill="${hi ? 'var(--accent)' : 'var(--muted-bar)'}"/><text class="val" x="${w + 6}" y="31">${int(r.launch_units)} · ${money(r.launch_sales)}</text></g>`;
+  });
+  return s + '</svg>';
+}
+
+function render(d) {
+  const n = d.nitro, pb = d.payback;
+  const diff = n.today_units - n.yday_same_time_units;
+  const word = diff > 0 ? 'ahead of' : diff < 0 ? 'behind' : 'level with';
+  const cls = diff > 0 ? 'up' : diff < 0 ? 'down' : '';
+  const arrow = diff > 0 ? '▲ Ahead of' : diff < 0 ? '▼ Behind' : 'Level with';
+  document.getElementById('app').innerHTML = `
+  <header>
+    <h1>Nitro Salted Brown Butter Oat Latte</h1>
+    <p class="sub">Purebread Mount Pleasant (5 E 5th Ave) · from Square · $7.90 · numbers as of <b>${esc(d.as_of_label || d.fetched_at)}</b></p>
+    <p class="take">Today it sold <b>${int(n.today_units)}</b>, ${word} yesterday's pace. Since launch on Nov 14 it's the <b>#${d.nitroRank}</b> of the three featured drinks at the store, with <b>${int(n.launch_units)}</b> sold.</p>
+  </header>
+  <section class="grid">
+    ${card('Sold today', int(n.today_units), `<span class="${cls}">${arrow}</span> yesterday's ${int(n.yday_same_time_units)} by this hour`)}
+    ${card('Net sales today', money(n.today_sales), `Yesterday's full day: ${money(n.yday_sales)}`)}
+    ${card('Sold since launch (Nov 14)', int(n.launch_units), `${money(n.launch_sales)} in net sales`)}
+    ${card('Best day so far', int(n.best_units), `on ${day(n.best_date, true)}`)}
+    ${card('Share of store net sales', pct(n.store_share_pct), 'of everything sold at Mount Pleasant since Nov 14')}
+  </section>
+  <section>
+    <h2>Today at Mount Pleasant: the three featured drinks</h2>
+    <p class="note">Leading today: <b>${esc(d.leader || 'none sold yet')}</b></p>
+    <div class="grid mt">${d.featured.map(f => card(f.label, int(f.units), `${money(f.net_sales)} net sales · yesterday ${int(f.yday_units)}`)).join('')}</div>
+    <div class="card mt"><div class="label">Total of all three today</div>
+      <span class="big">${int(d.featuredTotal.units)} drinks · ${money(d.featuredTotal.net_sales)}</span>
+      <div class="delta">Yesterday's full day: ${int(d.featuredTotal.yday_units)} drinks · ${money(d.featuredTotal.yday_sales)}</div></div>
+  </section>
+  <section>
+    <h2>Paying off the nitro equipment</h2>
+    <p class="note">Every nitro sold at ${money(pb.price)} costs ${money(pb.cost_per_drink)} to make, leaving ${money(pb.margin_per_drink)} toward the ${money(pb.equipment)} equipment investment. Only nitro sales count.</p>
+    <div class="card mt">
+      <div class="row"><div><div class="label">Paid off so far</div><span class="big">${money(pb.paid_off)}</span></div>
+      <div class="right"><div class="label">Still to go</div><span class="big">${money(pb.remaining)}</span></div></div>
+      <div class="bar"><div style="width:${Math.max(1, pb.pct_paid)}%"></div></div>
+      <div class="delta">${pct(pb.pct_paid)} paid off, from ${int(pb.drinks_sold)} nitros sold since Nov 14</div>
+    </div>
+    <div class="grid mt">
+      ${card('Drinks to break even', int(pb.breakeven_drinks), 'total, at full price')}
+      ${card('Drinks still needed', int(pb.drinks_to_go), 'from here')}
+      ${card('Current pace', pb.avg_per_day == null ? '—' : pb.avg_per_day, 'a day, average of full days it was on (5+ sold)')}
+      ${card('Paid off around', day(pb.payoff_date), `${int(pb.days_to_go)} more days at this pace`)}
+    </div>
+    <details class="mt"><summary>Equipment breakdown</summary><ul>
+      ${EQUIPMENT.map(([k, v]) => `<li>${esc(k)}: ${money(v)}</li>`).join('')}
+      <li>Total upfront: ${money(pb.equipment)}</li></ul>
+      <p>Paid off so far is actual net sales from Square (discounts and comps count against it) minus the cost to make each drink.</p></details>
+  </section>
+  <section class="grid2">
+    <div class="card"><h2>Units sold by day</h2><p class="note">Today's bar is lighter.</p>
+      ${bars(d.daily.map(x => ({label: day(x.date), value: x.units, faded: x.is_today, tip: `${day(x.date, true)}: ${int(x.units)} sold, ${money(x.net_sales)}`})), 'Nitro units sold per day since Nov 14')}</div>
+    <div class="card"><h2>Today by hour vs yesterday</h2>
+      <div class="legend"><span><i class="sw"></i>Today</span><span><i class="sw line"></i>Yesterday</span></div>
+      ${bars(d.todayHourly.map(h => ({label: hr(h.hour), value: h.today, ref: h.yesterday, tip: `${hr(h.hour)}: today ${h.today}, yesterday ${h.yesterday}`})), 'Nitro units per hour today, yesterday as markers', true)}</div>
+  </section>
+  <section class="card"><h2>Featured drinks at Mount Pleasant since Nov 14</h2><p class="note">Units sold, with net sales. Nitro is highlighted.</p>${ranking(d.byLaunch)}</section>
+  <details><summary>How these numbers work</summary><ul>
+    <li>Net sales are after discounts and comps, before tax and tips.</li>
+    <li>Hours and days use the time each order was opened at the store, Vancouver time.</li>
+    <li>No nitro sold on Nov 15, so it was likely off the menu that day.</li>
+    <li>These numbers are a snapshot. They change only when data.json is replaced.</li></ul></details>`;
+}
+
+fetch('data.json', {cache: 'no-store'})
+  .then(r => { if (!r.ok) throw new Error('data.json not found'); return r.json(); })
+  .then(render)
+  .catch(e => { document.getElementById('app').innerHTML = `<div class="error">Couldn't load the numbers: ${esc(e.message)}</div>`; });
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+{
+  "fetched_at": "2026-11-19T00:54:38.000Z",
+  "today": "2026-11-18",
+  "nitro": {
+    "today_units": 32,
+    "today_sales": 248.85,
+    "yday_same_time_units": 39,
+    "yday_units": 39,
+    "yday_sales": 308.1,
+    "launch_units": 101,
+    "launch_sales": 778.15,
+    "best_units": 39,
+    "best_date": "2026-11-17",
+    "store_share_pct": 2.3
+  },
+  "daily": [
+    {
+      "date": "2026-11-14",
+      "units": 1,
+      "net_sales": 7.9,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-15",
+      "units": 0,
+      "net_sales": 0,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-16",
+      "units": 29,
+      "net_sales": 213.3,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-17",
+      "units": 39,
+      "net_sales": 308.1,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-18",
+      "units": 32,
+      "net_sales": 248.85,
+      "is_today": true
+    }
+  ],
+  "todayHourly": [
+    {
+      "hour": 8,
+      "today": 0,
+      "yesterday": 3
+    },
+    {
+      "hour": 9,
+      "today": 0,
+      "yesterday": 7
+    },
+    {
+      "hour": 10,
+      "today": 0,
+      "yesterday": 5
+    },
+    {
+      "hour": 11,
+      "today": 0,
+      "yesterday": 9
+    },
+    {
+      "hour": 12,
+      "today": 0,
+      "yesterday": 9
+    },
+    {
+      "hour": 13,
+      "today": 0,
+      "yesterday": 5
+    },
+    {
+      "hour": 14,
+      "today": 5,
+      "yesterday": 1
+    },
+    {
+      "hour": 15,
+      "today": 14,
+      "yesterday": 0
+    },
+    {
+      "hour": 16,
+      "today": 7,
+      "yesterday": 0
+    },
+    {
+      "hour": 17,
+      "today": 6,
+      "yesterday": 0
+    }
+  ],
+  "featured": [
+    {
+      "key": "nitro",
+      "label": "Nitro Salted Brown Butter Oat Latte",
+      "short": "Nitro",
+      "units": 32,
+      "net_sales": 248.85,
+      "yday_units": 39,
+      "yday_sales": 308.1,
+      "launch_units": 101,
+      "launch_sales": 778.15
+    },
+    {
+      "key": "caramel",
+      "label": "Caramel Brulee Latte",
+      "short": "Caramel Brulee Latte",
+      "units": 45,
+      "net_sales": 342,
+      "yday_units": 14,
+      "yday_sales": 106,
+      "launch_units": 68,
+      "launch_sales": 518.5
+    },
+    {
+      "key": "marshmallow",
+      "label": "Toasted Marshmallow Mocha",
+      "short": "Toasted Marshmallow Mocha",
+      "units": 29,
+      "net_sales": 216,
+      "yday_units": 8,
+      "yday_sales": 53.5,
+      "launch_units": 47,
+      "launch_sales": 346.5
+    }
+  ],
+  "featuredTotal": {
+    "units": 106,
+    "net_sales": 806.85,
+    "yday_units": 61,
+    "yday_sales": 467.6
+  },
+  "nitroRank": 1,
+  "leader": "Caramel Brulee Latte",
+  "byLaunch": [
+    {
+      "key": "nitro",
+      "label": "Nitro Salted Brown Butter Oat Latte",
+      "short": "Nitro",
+      "units": 32,
+      "net_sales": 248.85,
+      "yday_units": 39,
+      "yday_sales": 308.1,
+      "launch_units": 101,
+      "launch_sales": 778.15
+    },
+    {
+      "key": "caramel",
+      "label": "Caramel Brulee Latte",
+      "short": "Caramel Brulee Latte",
+      "units": 45,
+      "net_sales": 342,
+      "yday_units": 14,
+      "yday_sales": 106,
+      "launch_units": 68,
+      "launch_sales": 518.5
+    },
+    {
+      "key": "marshmallow",
+      "label": "Toasted Marshmallow Mocha",
+      "short": "Toasted Marshmallow Mocha",
+      "units": 29,
+      "net_sales": 216,
+      "yday_units": 8,
+      "yday_sales": 53.5,
+      "launch_units": 47,
+      "launch_sales": 346.5
+    }
+  ],
+  "payback": {
+    "equipment": 4605.21,
+    "cost_per_drink": 2.65,
+    "price": 7.9,
+    "margin_per_drink": 5.25,
+    "breakeven_drinks": 878,
+    "drinks_sold": 101,
+    "paid_off": 510.5,
+    "remaining": 4094.71,
+    "pct_paid": 11.1,
+    "drinks_to_go": 780,
+    "avg_per_day": 34,
+    "days_to_go": 23,
+    "payoff_date": "2026-12-11"
+  },
+  "as_of_label": "Wed Nov 18, 5:54pm"
+}
