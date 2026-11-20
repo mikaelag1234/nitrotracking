@@ -1,1 +1,206 @@
-{"fetched_at":"2026-11-20T00:00:45.000Z","today":"2026-11-19","nitro":{"today_units":215,"today_sales":1698.5,"yday_same_time_units":32,"yday_units":32,"yday_sales":248.85,"launch_units":316,"launch_sales":2476.65,"best_units":215,"best_date":"2026-11-19","store_share_pct":5.8},"daily":[{"date":"2026-11-14","units":1,"net_sales":7.9,"is_today":false},{"date":"2026-11-15","units":0,"net_sales":0,"is_today":false},{"date":"2026-11-16","units":29,"net_sales":213.3,"is_today":false},{"date":"2026-11-17","units":39,"net_sales":308.1,"is_today":false},{"date":"2026-11-18","units":32,"net_sales":248.85,"is_today":false},{"date":"2026-11-19","units":215,"net_sales":1698.5,"is_today":true}],"todayHourly":[{"hour":8,"today":20,"yesterday":0},{"hour":9,"today":15,"yesterday":0},{"hour":10,"today":20,"yesterday":0},{"hour":11,"today":31,"yesterday":0},{"hour":12,"today":34,"yesterday":0},{"hour":13,"today":33,"yesterday":0},{"hour":14,"today":25,"yesterday":5},{"hour":15,"today":23,"yesterday":14},{"hour":16,"today":14,"yesterday":7},{"hour":17,"today":0,"yesterday":6}],"featured":[{"key":"nitro","label":"Nitro Salted Brown Butter Oat Latte","short":"Nitro","units":215,"net_sales":1698.5,"yday_units":32,"yday_sales":248.85,"launch_units":316,"launch_sales":2476.65},{"key":"caramel","label":"Caramel Brulee Latte","short":"Caramel Brulee Latte","units":8,"net_sales":61,"yday_units":45,"yday_sales":342,"launch_units":76,"launch_sales":579.5},{"key":"marshmallow","label":"Toasted Marshmallow Mocha","short":"Toasted Marshmallow Mocha","units":6,"net_sales":47,"yday_units":29,"yday_sales":216,"launch_units":53,"launch_sales":393.5}],"featuredTotal":{"units":229,"net_sales":1806.5,"yday_units":106,"yday_sales":806.85},"nitroRank":1,"leader":"Nitro","byLaunch":[{"key":"nitro","label":"Nitro Salted Brown Butter Oat Latte","short":"Nitro","units":215,"net_sales":1698.5,"yday_units":32,"yday_sales":248.85,"launch_units":316,"launch_sales":2476.65},{"key":"caramel","label":"Caramel Brulee Latte","short":"Caramel Brulee Latte","units":8,"net_sales":61,"yday_units":45,"yday_sales":342,"launch_units":76,"launch_sales":579.5},{"key":"marshmallow","label":"Toasted Marshmallow Mocha","short":"Toasted Marshmallow Mocha","units":6,"net_sales":47,"yday_units":29,"yday_sales":216,"launch_units":53,"launch_sales":393.5}],"payback":{"equipment":4605.21,"cost_per_drink":2.65,"price":7.9,"margin_per_drink":5.25,"breakeven_drinks":878,"drinks_sold":316,"paid_off":1639.25,"remaining":2965.96,"pct_paid":35.6,"drinks_to_go":565,"avg_per_day":33.3,"days_to_go":17,"payoff_date":"2026-12-06"},"as_of_label":"Thu Nov 19, 5:00pm"}
+{
+  "fetched_at": "2026-11-20T21:05:21.000Z",
+  "today": "2026-11-20",
+  "nitro": {
+    "today_units": 137,
+    "today_sales": 1058.6,
+    "yday_same_time_units": 178,
+    "yday_units": 219,
+    "yday_sales": 1726.15,
+    "launch_units": 457,
+    "launch_sales": 3562.9,
+    "best_units": 219,
+    "best_date": "2026-11-19",
+    "store_share_pct": 7.2
+  },
+  "daily": [
+    {
+      "date": "2026-11-14",
+      "units": 1,
+      "net_sales": 7.9,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-15",
+      "units": 0,
+      "net_sales": 0,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-16",
+      "units": 29,
+      "net_sales": 213.3,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-17",
+      "units": 39,
+      "net_sales": 308.1,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-18",
+      "units": 32,
+      "net_sales": 248.85,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-19",
+      "units": 219,
+      "net_sales": 1726.15,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-20",
+      "units": 137,
+      "net_sales": 1058.6,
+      "is_today": true
+    }
+  ],
+  "todayHourly": [
+    {
+      "hour": 8,
+      "today": 17,
+      "yesterday": 20
+    },
+    {
+      "hour": 9,
+      "today": 23,
+      "yesterday": 15
+    },
+    {
+      "hour": 10,
+      "today": 9,
+      "yesterday": 20
+    },
+    {
+      "hour": 11,
+      "today": 27,
+      "yesterday": 31
+    },
+    {
+      "hour": 12,
+      "today": 22,
+      "yesterday": 34
+    },
+    {
+      "hour": 13,
+      "today": 37,
+      "yesterday": 33
+    },
+    {
+      "hour": 14,
+      "today": 2,
+      "yesterday": 25
+    },
+    {
+      "hour": 15,
+      "today": 0,
+      "yesterday": 23
+    },
+    {
+      "hour": 16,
+      "today": 0,
+      "yesterday": 14
+    },
+    {
+      "hour": 17,
+      "today": 0,
+      "yesterday": 4
+    }
+  ],
+  "featured": [
+    {
+      "key": "nitro",
+      "label": "Nitro Salted Brown Butter Oat Latte",
+      "short": "Nitro",
+      "units": 137,
+      "net_sales": 1058.6,
+      "yday_units": 219,
+      "yday_sales": 1726.15,
+      "launch_units": 457,
+      "launch_sales": 3562.9
+    },
+    {
+      "key": "caramel",
+      "label": "Caramel Brulee Latte",
+      "short": "Caramel Brulee Latte",
+      "units": 13,
+      "net_sales": 92,
+      "yday_units": 8,
+      "yday_sales": 61,
+      "launch_units": 89,
+      "launch_sales": 671.5
+    },
+    {
+      "key": "marshmallow",
+      "label": "Toasted Marshmallow Mocha",
+      "short": "Toasted Marshmallow Mocha",
+      "units": 9,
+      "net_sales": 65.75,
+      "yday_units": 6,
+      "yday_sales": 47,
+      "launch_units": 62,
+      "launch_sales": 459.25
+    }
+  ],
+  "featuredTotal": {
+    "units": 159,
+    "net_sales": 1216.35,
+    "yday_units": 233,
+    "yday_sales": 1834.15
+  },
+  "nitroRank": 1,
+  "leader": "Nitro",
+  "byLaunch": [
+    {
+      "key": "nitro",
+      "label": "Nitro Salted Brown Butter Oat Latte",
+      "short": "Nitro",
+      "units": 137,
+      "net_sales": 1058.6,
+      "yday_units": 219,
+      "yday_sales": 1726.15,
+      "launch_units": 457,
+      "launch_sales": 3562.9
+    },
+    {
+      "key": "caramel",
+      "label": "Caramel Brulee Latte",
+      "short": "Caramel Brulee Latte",
+      "units": 13,
+      "net_sales": 92,
+      "yday_units": 8,
+      "yday_sales": 61,
+      "launch_units": 89,
+      "launch_sales": 671.5
+    },
+    {
+      "key": "marshmallow",
+      "label": "Toasted Marshmallow Mocha",
+      "short": "Toasted Marshmallow Mocha",
+      "units": 9,
+      "net_sales": 65.75,
+      "yday_units": 6,
+      "yday_sales": 47,
+      "launch_units": 62,
+      "launch_sales": 459.25
+    }
+  ],
+  "payback": {
+    "equipment": 4605.21,
+    "cost_per_drink": 2.65,
+    "price": 7.9,
+    "margin_per_drink": 5.25,
+    "breakeven_drinks": 878,
+    "drinks_sold": 457,
+    "paid_off": 2351.85,
+    "remaining": 2253.36,
+    "pct_paid": 51.1,
+    "drinks_to_go": 430,
+    "avg_per_day": 79.8,
+    "days_to_go": 6,
+    "payoff_date": "2026-11-26"
+  },
+  "as_of_label": "Fri Nov 20, 2:05pm"
+}
