@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-11-20T21:05:21.000Z",
+  "fetched_at": "2026-11-20T21:53:11.000Z",
   "today": "2026-11-20",
   "nitro": {
-    "today_units": 137,
-    "today_sales": 1058.6,
+    "today_units": 160,
+    "today_sales": 1240.3,
     "yday_same_time_units": 178,
     "yday_units": 219,
     "yday_sales": 1726.15,
-    "launch_units": 457,
-    "launch_sales": 3562.9,
+    "launch_units": 480,
+    "launch_sales": 3744.6,
     "best_units": 219,
     "best_date": "2026-11-19",
-    "store_share_pct": 7.2
+    "store_share_pct": 7.4
   },
   "daily": [
     {
@@ -52,8 +52,8 @@
     },
     {
       "date": "2026-11-20",
-      "units": 137,
-      "net_sales": 1058.6,
+      "units": 160,
+      "net_sales": 1240.3,
       "is_today": true
     }
   ],
@@ -90,7 +90,7 @@
     },
     {
       "hour": 14,
-      "today": 2,
+      "today": 25,
       "yesterday": 25
     },
     {
@@ -114,39 +114,39 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 137,
-      "net_sales": 1058.6,
+      "units": 160,
+      "net_sales": 1240.3,
       "yday_units": 219,
       "yday_sales": 1726.15,
-      "launch_units": 457,
-      "launch_sales": 3562.9
+      "launch_units": 480,
+      "launch_sales": 3744.6
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 13,
-      "net_sales": 92,
+      "units": 14,
+      "net_sales": 99.5,
       "yday_units": 8,
       "yday_sales": 61,
-      "launch_units": 89,
-      "launch_sales": 671.5
+      "launch_units": 90,
+      "launch_sales": 679
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 9,
-      "net_sales": 65.75,
+      "units": 10,
+      "net_sales": 69.5,
       "yday_units": 6,
       "yday_sales": 47,
-      "launch_units": 62,
-      "launch_sales": 459.25
+      "launch_units": 63,
+      "launch_sales": 463
     }
   ],
   "featuredTotal": {
-    "units": 159,
-    "net_sales": 1216.35,
+    "units": 184,
+    "net_sales": 1409.3,
     "yday_units": 233,
     "yday_sales": 1834.15
   },
@@ -157,34 +157,34 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 137,
-      "net_sales": 1058.6,
+      "units": 160,
+      "net_sales": 1240.3,
       "yday_units": 219,
       "yday_sales": 1726.15,
-      "launch_units": 457,
-      "launch_sales": 3562.9
+      "launch_units": 480,
+      "launch_sales": 3744.6
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 13,
-      "net_sales": 92,
+      "units": 14,
+      "net_sales": 99.5,
       "yday_units": 8,
       "yday_sales": 61,
-      "launch_units": 89,
-      "launch_sales": 671.5
+      "launch_units": 90,
+      "launch_sales": 679
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 9,
-      "net_sales": 65.75,
+      "units": 10,
+      "net_sales": 69.5,
       "yday_units": 6,
       "yday_sales": 47,
-      "launch_units": 62,
-      "launch_sales": 459.25
+      "launch_units": 63,
+      "launch_sales": 463
     }
   ],
   "payback": {
@@ -193,14 +193,14 @@
     "price": 7.9,
     "margin_per_drink": 5.25,
     "breakeven_drinks": 878,
-    "drinks_sold": 457,
-    "paid_off": 2351.85,
-    "remaining": 2253.36,
-    "pct_paid": 51.1,
-    "drinks_to_go": 430,
+    "drinks_sold": 480,
+    "paid_off": 2472.6,
+    "remaining": 2132.61,
+    "pct_paid": 53.7,
+    "drinks_to_go": 407,
     "avg_per_day": 79.8,
     "days_to_go": 6,
     "payoff_date": "2026-11-26"
   },
-  "as_of_label": "Fri Nov 20, 2:05pm"
+  "as_of_label": "Fri Nov 20, 2:53pm"
 }
