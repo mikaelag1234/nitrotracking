@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-11-23T22:55:33.000Z",
+  "fetched_at": "2026-11-24T04:38:07.000Z",
   "today": "2026-11-23",
   "nitro": {
-    "today_units": 25,
-    "today_sales": 197.5,
+    "today_units": 48,
+    "today_sales": 371.3,
     "yday_same_time_units": 0,
     "yday_units": 0,
     "yday_sales": 0,
-    "launch_units": 614,
-    "launch_sales": 4803.2,
+    "launch_units": 637,
+    "launch_sales": 4977,
     "best_units": 219,
     "best_date": "2026-11-19",
-    "store_share_pct": 6
+    "store_share_pct": 6.1
   },
   "daily": [
     {
@@ -70,8 +70,8 @@
     },
     {
       "date": "2026-11-23",
-      "units": 25,
-      "net_sales": 197.5,
+      "units": 48,
+      "net_sales": 371.3,
       "is_today": true
     }
   ],
@@ -118,12 +118,12 @@
     },
     {
       "hour": 16,
-      "today": 0,
+      "today": 19,
       "yesterday": 0
     },
     {
       "hour": 17,
-      "today": 0,
+      "today": 4,
       "yesterday": 0
     }
   ],
@@ -132,77 +132,77 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 25,
-      "net_sales": 197.5,
+      "units": 48,
+      "net_sales": 371.3,
       "yday_units": 0,
       "yday_sales": 0,
-      "launch_units": 614,
-      "launch_sales": 4803.2
+      "launch_units": 637,
+      "launch_sales": 4977
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 32,
-      "net_sales": 249,
+      "units": 33,
+      "net_sales": 256.5,
       "yday_units": 24,
       "yday_sales": 188,
-      "launch_units": 215,
-      "launch_sales": 1650.5
+      "launch_units": 216,
+      "launch_sales": 1658
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 26,
-      "net_sales": 192.28,
+      "units": 29,
+      "net_sales": 216.78,
       "yday_units": 99,
       "yday_sales": 767.5,
-      "launch_units": 244,
-      "launch_sales": 1848.03
+      "launch_units": 247,
+      "launch_sales": 1872.53
     }
   ],
   "featuredTotal": {
-    "units": 83,
-    "net_sales": 638.78,
+    "units": 110,
+    "net_sales": 844.58,
     "yday_units": 123,
     "yday_sales": 955.5
   },
   "nitroRank": 1,
-  "leader": "Caramel Brulee Latte",
+  "leader": "Nitro",
   "byLaunch": [
     {
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 25,
-      "net_sales": 197.5,
+      "units": 48,
+      "net_sales": 371.3,
       "yday_units": 0,
       "yday_sales": 0,
-      "launch_units": 614,
-      "launch_sales": 4803.2
+      "launch_units": 637,
+      "launch_sales": 4977
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 26,
-      "net_sales": 192.28,
+      "units": 29,
+      "net_sales": 216.78,
       "yday_units": 99,
       "yday_sales": 767.5,
-      "launch_units": 244,
-      "launch_sales": 1848.03
+      "launch_units": 247,
+      "launch_sales": 1872.53
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 32,
-      "net_sales": 249,
+      "units": 33,
+      "net_sales": 256.5,
       "yday_units": 24,
       "yday_sales": 188,
-      "launch_units": 215,
-      "launch_sales": 1650.5
+      "launch_units": 216,
+      "launch_sales": 1658
     }
   ],
   "payback": {
@@ -211,14 +211,14 @@
     "price": 7.9,
     "margin_per_drink": 5.25,
     "breakeven_drinks": 878,
-    "drinks_sold": 614,
-    "paid_off": 3176.1,
-    "remaining": 1429.11,
-    "pct_paid": 69,
-    "drinks_to_go": 273,
+    "drinks_sold": 637,
+    "paid_off": 3288.95,
+    "remaining": 1316.26,
+    "pct_paid": 71.4,
+    "drinks_to_go": 251,
     "avg_per_day": 98,
     "days_to_go": 3,
     "payoff_date": "2026-11-26"
   },
-  "as_of_label": "Mon Nov 23, 3:55pm"
+  "as_of_label": "Mon Nov 23, 9:37pm (day closed)"
 }
