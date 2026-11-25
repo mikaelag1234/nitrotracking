@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-11-24T22:27:03.000Z",
-  "today": "2026-11-24",
+  "fetched_at": "2026-11-25T19:26:21.000Z",
+  "today": "2026-11-25",
   "nitro": {
-    "today_units": 120,
-    "today_sales": 943.26,
-    "yday_same_time_units": 25,
-    "yday_units": 48,
-    "yday_sales": 371.3,
-    "launch_units": 757,
-    "launch_sales": 5920.26,
+    "today_units": 75,
+    "today_sales": 576.7,
+    "yday_same_time_units": 81,
+    "yday_units": 138,
+    "yday_sales": 1073.41,
+    "launch_units": 850,
+    "launch_sales": 6627.11,
     "best_units": 219,
     "best_date": "2026-11-19",
-    "store_share_pct": 6.8
+    "store_share_pct": 7.2
   },
   "daily": [
     {
@@ -76,61 +76,67 @@
     },
     {
       "date": "2026-11-24",
-      "units": 120,
-      "net_sales": 943.26,
+      "units": 138,
+      "net_sales": 1073.41,
+      "is_today": false
+    },
+    {
+      "date": "2026-11-25",
+      "units": 75,
+      "net_sales": 576.7,
       "is_today": true
     }
   ],
   "todayHourly": [
     {
       "hour": 8,
-      "today": 15,
-      "yesterday": 0
+      "today": 12,
+      "yesterday": 15
     },
     {
       "hour": 9,
-      "today": 9,
-      "yesterday": 0
+      "today": 16,
+      "yesterday": 9
     },
     {
       "hour": 10,
-      "today": 12,
-      "yesterday": 0
+      "today": 24,
+      "yesterday": 12
     },
     {
       "hour": 11,
-      "today": 19,
-      "yesterday": 0
+      "today": 17,
+      "yesterday": 19
     },
     {
       "hour": 12,
-      "today": 26,
-      "yesterday": 0
+      "today": 6,
+      "yesterday": 26
     },
     {
       "hour": 13,
-      "today": 22,
-      "yesterday": 0
+      "today": 0,
+      "yesterday": 22
     },
     {
       "hour": 14,
-      "today": 15,
+      "today": 0,
       "yesterday": 15
     },
     {
       "hour": 15,
-      "today": 2,
-      "yesterday": 10
+      "today": 0,
+      "yesterday": 6
     },
     {
       "hour": 16,
       "today": 0,
-      "yesterday": 19
+      "yesterday": 13
     },
     {
       "hour": 17,
       "today": 0,
-      "yesterday": 4
+      "yesterday": 1
     }
   ],
   "featured": [
@@ -138,41 +144,41 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 120,
-      "net_sales": 943.26,
-      "yday_units": 48,
-      "yday_sales": 371.3,
-      "launch_units": 757,
-      "launch_sales": 5920.26
+      "units": 75,
+      "net_sales": 576.7,
+      "yday_units": 138,
+      "yday_sales": 1073.41,
+      "launch_units": 850,
+      "launch_sales": 6627.11
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 13,
-      "net_sales": 94.75,
-      "yday_units": 33,
-      "yday_sales": 256.5,
-      "launch_units": 229,
-      "launch_sales": 1752.75
+      "units": 7,
+      "net_sales": 54.5,
+      "yday_units": 14,
+      "yday_sales": 103.25,
+      "launch_units": 237,
+      "launch_sales": 1815.75
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 4,
-      "net_sales": 30,
-      "yday_units": 29,
-      "yday_sales": 216.78,
-      "launch_units": 251,
-      "launch_sales": 1902.53
+      "units": 1,
+      "net_sales": 7.5,
+      "yday_units": 5,
+      "yday_sales": 38.5,
+      "launch_units": 253,
+      "launch_sales": 1918.53
     }
   ],
   "featuredTotal": {
-    "units": 137,
-    "net_sales": 1068.01,
-    "yday_units": 110,
-    "yday_sales": 844.58
+    "units": 83,
+    "net_sales": 638.7,
+    "yday_units": 157,
+    "yday_sales": 1215.16
   },
   "nitroRank": 1,
   "leader": "Nitro",
@@ -181,34 +187,34 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 120,
-      "net_sales": 943.26,
-      "yday_units": 48,
-      "yday_sales": 371.3,
-      "launch_units": 757,
-      "launch_sales": 5920.26
+      "units": 75,
+      "net_sales": 576.7,
+      "yday_units": 138,
+      "yday_sales": 1073.41,
+      "launch_units": 850,
+      "launch_sales": 6627.11
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 4,
-      "net_sales": 30,
-      "yday_units": 29,
-      "yday_sales": 216.78,
-      "launch_units": 251,
-      "launch_sales": 1902.53
+      "units": 1,
+      "net_sales": 7.5,
+      "yday_units": 5,
+      "yday_sales": 38.5,
+      "launch_units": 253,
+      "launch_sales": 1918.53
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 13,
-      "net_sales": 94.75,
-      "yday_units": 33,
-      "yday_sales": 256.5,
-      "launch_units": 229,
-      "launch_sales": 1752.75
+      "units": 7,
+      "net_sales": 54.5,
+      "yday_units": 14,
+      "yday_sales": 103.25,
+      "launch_units": 237,
+      "launch_sales": 1815.75
     }
   ],
   "payback": {
@@ -217,14 +223,14 @@
     "price": 7.9,
     "margin_per_drink": 5.25,
     "breakeven_drinks": 878,
-    "drinks_sold": 757,
-    "paid_off": 3914.21,
-    "remaining": 691,
-    "pct_paid": 85,
-    "drinks_to_go": 132,
-    "avg_per_day": 90.9,
-    "days_to_go": 2,
+    "drinks_sold": 850,
+    "paid_off": 4374.61,
+    "remaining": 230.6,
+    "pct_paid": 95,
+    "drinks_to_go": 44,
+    "avg_per_day": 96.8,
+    "days_to_go": 1,
     "payoff_date": "2026-11-26"
   },
-  "as_of_label": "Tue Nov 24, 3:26pm"
+  "as_of_label": "Wed Nov 25, 12:26pm"
 }
