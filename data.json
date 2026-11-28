@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-11-27T21:46:08.000Z",
+  "fetched_at": "2026-11-28T03:09:04.000Z",
   "today": "2026-11-27",
   "nitro": {
-    "today_units": 113,
-    "today_sales": 884.55,
-    "yday_same_time_units": 117,
+    "today_units": 142,
+    "today_sales": 1101.8,
+    "yday_same_time_units": 151,
     "yday_units": 151,
     "yday_sales": 1177.1,
-    "launch_units": 1189,
-    "launch_sales": 9277.31,
+    "launch_units": 1218,
+    "launch_sales": 9494.56,
     "best_units": 219,
     "best_date": "2026-11-19",
-    "store_share_pct": 8.4
+    "store_share_pct": 8.5
   },
   "daily": [
     {
@@ -94,8 +94,8 @@
     },
     {
       "date": "2026-11-27",
-      "units": 113,
-      "net_sales": 884.55,
+      "units": 142,
+      "net_sales": 1101.8,
       "is_today": true
     }
   ],
@@ -132,22 +132,22 @@
     },
     {
       "hour": 14,
-      "today": 14,
+      "today": 21,
       "yesterday": 19
     },
     {
       "hour": 15,
-      "today": 0,
+      "today": 9,
       "yesterday": 14
     },
     {
       "hour": 16,
-      "today": 0,
+      "today": 5,
       "yesterday": 12
     },
     {
       "hour": 17,
-      "today": 0,
+      "today": 8,
       "yesterday": 8
     }
   ],
@@ -156,39 +156,39 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 113,
-      "net_sales": 884.55,
+      "units": 142,
+      "net_sales": 1101.8,
       "yday_units": 151,
       "yday_sales": 1177.1,
-      "launch_units": 1189,
-      "launch_sales": 9277.31
+      "launch_units": 1218,
+      "launch_sales": 9494.56
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 15,
-      "net_sales": 117.5,
+      "units": 18,
+      "net_sales": 141,
       "yday_units": 8,
       "yday_sales": 63,
-      "launch_units": 265,
-      "launch_sales": 2033.75
+      "launch_units": 268,
+      "launch_sales": 2057.25
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 8,
-      "net_sales": 60,
+      "units": 9,
+      "net_sales": 67.5,
       "yday_units": 8,
       "yday_sales": 61,
-      "launch_units": 272,
-      "launch_sales": 2063.03
+      "launch_units": 273,
+      "launch_sales": 2070.53
     }
   ],
   "featuredTotal": {
-    "units": 136,
-    "net_sales": 1062.05,
+    "units": 169,
+    "net_sales": 1310.3,
     "yday_units": 167,
     "yday_sales": 1301.1
   },
@@ -199,34 +199,34 @@
       "key": "nitro",
       "label": "Nitro Salted Brown Butter Oat Latte",
       "short": "Nitro",
-      "units": 113,
-      "net_sales": 884.55,
+      "units": 142,
+      "net_sales": 1101.8,
       "yday_units": 151,
       "yday_sales": 1177.1,
-      "launch_units": 1189,
-      "launch_sales": 9277.31
+      "launch_units": 1218,
+      "launch_sales": 9494.56
     },
     {
       "key": "marshmallow",
       "label": "Toasted Marshmallow Mocha",
       "short": "Toasted Marshmallow Mocha",
-      "units": 8,
-      "net_sales": 60,
+      "units": 9,
+      "net_sales": 67.5,
       "yday_units": 8,
       "yday_sales": 61,
-      "launch_units": 272,
-      "launch_sales": 2063.03
+      "launch_units": 273,
+      "launch_sales": 2070.53
     },
     {
       "key": "caramel",
       "label": "Caramel Brulee Latte",
       "short": "Caramel Brulee Latte",
-      "units": 15,
-      "net_sales": 117.5,
+      "units": 18,
+      "net_sales": 141,
       "yday_units": 8,
       "yday_sales": 63,
-      "launch_units": 265,
-      "launch_sales": 2033.75
+      "launch_units": 268,
+      "launch_sales": 2057.25
     }
   ],
   "payback": {
@@ -235,8 +235,8 @@
     "price": 7.9,
     "margin_per_drink": 5.25,
     "breakeven_drinks": 878,
-    "drinks_sold": 1189,
-    "paid_off": 6126.46,
+    "drinks_sold": 1218,
+    "paid_off": 6266.86,
     "remaining": 0,
     "pct_paid": 100,
     "drinks_to_go": 0,
@@ -244,5 +244,5 @@
     "days_to_go": 0,
     "payoff_date": "2026-11-25"
   },
-  "as_of_label": "Fri Nov 27, 2:45pm"
+  "as_of_label": "Fri Nov 27, 8:08pm (day closed)"
 }
